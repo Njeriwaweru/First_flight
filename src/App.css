@@ -9,3 +9,25 @@
   display: flex;
   gap: 80px;
 }
+
+.bg-dark {
+    background-color: #242424;
+    color: #ffffff;
+}
+
+.bg-light {
+    background-color: #d8d5d5ea;
+    color: #000000;
+}
+
+.toggles {
+  display: flex;
+  gap: 50px;
+  position: fixed;
+  top: 30px;
+  right: 80px;
+}
+
+.bt-on {
+  background-color: #2525f6;
+}

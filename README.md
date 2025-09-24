@@ -22,6 +22,13 @@ first_flight/
 - Repo created and pushed to Github
 - First component: `<Button />` with `label`, `onClick`, `mode`, props
 - Two buttons rendered in `App.jsx`
-- ![Day 1 Screenshot](./screenshots/Day1.png)
 
 commit message: `Day 1: Setup + Button component`
+
+## Day 2 Deliverables
+- Toggle component with `useState` (on/off switch).
+- Props: `label`, `defaultOn`, `onToggle`
+- State updates with (`setState(prev => !prev)`)
+- Multiple toggles in `App.jsx`, each independent.
+
+commit message: `Day 2: Toggle with local state`
