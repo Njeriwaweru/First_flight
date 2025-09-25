@@ -34,4 +34,21 @@ Used -> instead of => in an arrow function, causing a syntax error. Replaced it 
 
 **Lesson Learned**
 - Updating state correctly using setState(prev => !prev).
-- Learnt about `useEffect`, how and when to use it.
+- Learnt about `useEffect`, how and when to use it. (Put values in the dependency array only if their change means the effect must re-run.)
+
+### Day 3 - Log (26/09/2025)
+
+**Issues**
+### Entry 1: - Clock not ticking
+Forgot to add setInterval inside useEffect, so the time only updated once. Fixed by wrapping the update logic in `setInterval`.
+
+### Entry 2: - Wrong dependency array
+Used [time] as a dependency, which caused an infinite loop of updates. Fixed by replacing it with [isRunning] so the effect runs only when the value of `isRunning` changes.
+
+### Entry 3: - State not initialized
+Didn’t initialize useState with the current time, so the component rendered undefined at first. Fixed by passing `new Date().toLocaleTimeString()` as the initial value.
+
+**Lesson learned**
+ - Always initialize state with a sensible default to avoid `undefined`.
+ - `setInterval` needs cleanup with `clearInterval` to prevent memory leaks.
+ - Dependency arrays control when `useEffect` runs—empty `[]` means run only on mount.

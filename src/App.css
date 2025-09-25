@@ -31,3 +31,14 @@
 .bt-on {
   background-color: #2525f6;
 }
+
+.clockContainer {
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.clockImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 30px;
+}

@@ -2,6 +2,8 @@ import Button from './components/button/Button'
 import './App.css'
 import Toggle from './components/toggle/Toggle'
 import { useState } from 'react'
+import Clock from './components/clock/Clock';
+import clockImg from './assets/clock.jpg';
 
 function App() {
   const [bluetoothOn, setBluetoothOn] = useState(false);
@@ -35,6 +37,10 @@ function App() {
         <Toggle label="Wifi" onToggle={handleWifi} />
       </div>
 
+      <div className='clockContainer'>
+        <img className='clockImg' src={clockImg}/>
+        <Clock />
+      </div>
       <div className='buttons'>
         <Button 
           mode="primary"

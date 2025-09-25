@@ -32,3 +32,10 @@ commit message: `Day 1: Setup + Button component`
 - Multiple toggles in `App.jsx`, each independent.
 
 commit message: `Day 2: Toggle with local state`
+
+## Day 3 Deliverables
+- Clock component with `useEffect` (setInterval to tick every second).
+- Cleanup on unmount (clearInterval).
+- Start/Stop button to control clock.
+
+commit message: `Day 3: Clock with effect + cleanup`
