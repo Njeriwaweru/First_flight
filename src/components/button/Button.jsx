@@ -1,8 +1,14 @@
 import "./Button.css";
 
-const Button = ({ label, onClick, mode }) => {
+const Button = ({ label, onClick, mode = "primary" }) => {
 
-    const className = mode === "primary" ? "btn btn-primary" : "btn btn-secondary";
+    const modeClasses = {
+        primary: "btn btn-primary",
+        secondary: "btn btn-secondary",
+        login: "btn btn-login"
+    }
+
+    const className = modeClasses[mode] || "btn"
 
     return (
         <>

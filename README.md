@@ -46,3 +46,11 @@ commit message: `Day 3: Clock with effect + cleanup`
 - Rendered a list of strins and a user list with the list component.
 
 commit message: `Day 4: List with composition`
+
+## Day 5 Deliverables
+- FormInput component: controlled input(`value`, `onChange`, `label` etc)
+- Used form input component in LoginForm with username and password fields.
+- Validate: if empty -> shows error message under field.
+- Shows alert with values on submit
+
+commit message: `Day 5: Controlled form with validation`

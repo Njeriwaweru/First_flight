@@ -3,13 +3,12 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  /* overflow: hidden; */
 }
 
 .toggles {
   display: flex;
   gap: 50px;
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 80px;
 }

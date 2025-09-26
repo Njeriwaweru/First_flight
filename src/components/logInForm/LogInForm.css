@@ -1,0 +1,8 @@
+.logInForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 30px; */
+    margin-top: 180px;
+    margin-bottom: 380px;
+}

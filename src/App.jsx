@@ -6,6 +6,7 @@ import Clock from "./components/clock/Clock";
 import clockImg from "./assets/clock.jpg";
 import UserList from "./components/userList/UserList";
 import List from "./components/list/List";
+import LogInForm from "./components/logInForm/logInForm";
 
 function App() {
   const [bluetoothOn, setBluetoothOn] = useState(false);
@@ -46,11 +47,15 @@ function App() {
         <Clock />
       </div>
 
+      <LogInForm />
+
       <UserList />
 
       <List title="Fruits" items={fruits}>
         {(item) => item.toUpperCase()}
       </List>
+
+
 
       <div className="buttons">
         <Button

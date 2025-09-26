@@ -1,0 +1,42 @@
+.formInput {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.formLabel {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.formField {
+    font-size: 1.2rem;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #9c9a98;
+    color: #000000;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.togglePassword {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.togglePassword:focus {
+  outline: none;
+}
