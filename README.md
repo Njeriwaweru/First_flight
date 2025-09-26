@@ -39,3 +39,10 @@ commit message: `Day 2: Toggle with local state`
 - Start/Stop button to control clock.
 
 commit message: `Day 3: Clock with effect + cleanup`
+
+## Day 4 Deliverables
+- List component that takes an array of items as props and renders them.
+- A render-prop variant, (`children`) function that defines how each item is rendered.
+- Rendered a list of strins and a user list with the list component.
+
+commit message: `Day 4: List with composition`

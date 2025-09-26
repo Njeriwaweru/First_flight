@@ -52,3 +52,21 @@ Didn’t initialize useState with the current time, so the component rendered un
  - Always initialize state with a sensible default to avoid `undefined`.
  - `setInterval` needs cleanup with `clearInterval` to prevent memory leaks.
  - Dependency arrays control when `useEffect` runs—empty `[]` means run only on mount.
+
+ ### Day 4 - log
+
+ **Issues**
+ ### Entry 1: - Clock container styles not applying
+ The clock container styles weren't applying because I forgot to set a `position` property (it only had `top` and `left`). Fixed by adding `position: absolute;` in CSS.
+
+### Entry 2: - List not reusable
+Initially hardcoded the `USERS` array inside the List component, so it couldn’t accept other data. Fixed by making a generic list component and passing `items` as a `prop`.
+
+### Entry 3: - Wrong <ul> / <li> structure
+I wrapped <li> inside a <div>, which caused errors and broke semantics. Fixed by placing the content directly inside <li>.
+
+**Lesson learned**
+- CSS positioning rules: `top/left` only work if `position` is set.
+- Components should accept `props` to stay reusable.
+- List structure must follow semantic HTML: <ul> → <li> → content.
+- Render-prop pattern makes lists flexible: `{typeof children === "function" ? children(item, index) : item}`

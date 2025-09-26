@@ -37,7 +37,7 @@ const Clock = () => {
 
     return (
         <>
-            <h1>{time}</h1>
+            <h2>{time}</h2>
             <button onClick={handleRunning}>
                 {isRunning ? "Stop" : "Start"}
             </button>
